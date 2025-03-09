@@ -17,7 +17,7 @@ const EditRecipe = () => {
   // Fetch existing recipe details
   useEffect(() => {
     axios
-      .get(`https://recipe-backend-5apy.onrender.com/api/recipes/${id}`)
+      .get(`https://recipe-sharingplatform.onrender.com/api/recipes/${id}`)
       .then((response) => {
         setRecipe(response.data);
         setUpdatedRecipe({
